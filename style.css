@@ -1,0 +1,80 @@
+body{
+    display: inline;
+}
+
+/*Universal selector*/
+*{
+    text-align: center;
+    display: none;
+}
+
+/*Element selectors with diff. color types*/
+h1{
+    color: rgb(60, 179, 113);
+    text-decoration: none;
+}
+
+h3{
+    color: MediumSeaGreen;
+}
+
+h2{
+    color: #3cb371;
+    color: color-mix(in srgb MediumSeaGreen 75% white 25%);
+}
+
+/*id selector with color types and fallback color*/
+#wrap-up-last-meeting-and-discussion-topics-for-todays-meeting{
+    color: hls(248, 53%, 58%);
+    color: color(display-p3 0.235 0.702 0.443);
+}
+/*class selctor with diff. units, sizes, short padding, auto margin, background color*/
+.meeting.review{
+    width: 10vw;
+    height: 20vh;
+    padding: 5px 10px 15px 20px;
+    border: 4px solid darkblue;
+    background-color: white;
+    margin: auto;
+
+}
+/*id selector with margin long, padding long, and border types*/
+#comments-and-questions{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 1em;
+    
+
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+
+
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+/*attribute selector*/
+a[href*="photography"] {
+    font-size: 10pt;
+}
+
+.btn{
+    color: black;
+}
+
+.btn:hover{
+    background-color: white;
+}
+
+#meeting-video,
+#meeting-audio{
+    font-size: 10pt;
+
+}
+
+
