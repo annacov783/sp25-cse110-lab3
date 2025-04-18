@@ -27,6 +27,7 @@ h2{
 #wrap-up-last-meeting-and-discussion-topics-for-todays-meeting{
     color: hls(248, 53%, 58%);
     color: color(display-p3 0.235 0.702 0.443);
+    margin: 10px, 15px, 20px, 25px;
 }
 /*class selctor with diff. units, sizes, short padding, auto margin, background color*/
 .meeting.review{
@@ -40,6 +41,7 @@ h2{
 }
 /*id selector with margin long, padding long, and border types*/
 #comments-and-questions{
+    min-width: 2in;
     border-style: solid;
     border-color: black;
     border-width: 1px;
@@ -64,11 +66,14 @@ a[href*="photography"] {
 }
 
 .btn{
-    color: black;
+    max-width: 100px;
 }
 
 .btn:hover{
     background-color: white;
+}
+.btn:active{
+    color: black;
 }
 
 #meeting-video,
@@ -77,4 +82,4 @@ a[href*="photography"] {
 
 }
 
-
+/*Leftover tasks: Layouts, Responsiveness, Position, Fonts (General), Combinators and New Selectors (Selectors)*/
