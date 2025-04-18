@@ -12,6 +12,8 @@ body{
 h1{
     color: rgb(60, 179, 113);
     text-decoration: none;
+    position: static;
+
 }
 
 h3{
@@ -21,6 +23,11 @@ h3{
 h2{
     color: #3cb371;
     color: color-mix(in srgb MediumSeaGreen 75% white 25%);
+}
+
+.agenda{
+    display: flex;
+    align-content: space-between;
 }
 
 /*id selector with color types and fallback color*/
@@ -37,6 +44,9 @@ h2{
     border: 4px solid darkblue;
     background-color: white;
     margin: auto;
+
+    display: flex;
+    justify-content: center;
 
 }
 /*id selector with margin long, padding long, and border types*/
@@ -58,6 +68,10 @@ h2{
     padding-right: 10px;
     padding-bottom: 15px;
     padding-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /*attribute selector*/
@@ -65,8 +79,10 @@ a[href*="photography"] {
     font-size: 10pt;
 }
 
+/*Pseudo-classes and selectors*/
 .btn{
     max-width: 100px;
+    position: fixed;
 }
 
 .btn:hover{
@@ -76,10 +92,65 @@ a[href*="photography"] {
     color: black;
 }
 
+/*Selector list*/
 #meeting-video,
 #meeting-audio{
     font-size: 10pt;
 
 }
 
-/*Leftover tasks: Layouts, Responsiveness, Position, Fonts (General), Combinators and New Selectors (Selectors)*/
+/*grid layout attributes*/
+.restaurant1{
+    display: grid;
+    grid-auto-rows: 100px;
+}
+
+.restaurant2{
+    display: grid;
+    grid-column: 100px;
+    
+}
+
+.restaurant3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+/*Descendent Combinator*/
+nav li{
+    background-color: white;
+}
+
+/*Child Combinator*/
+ul > li {
+    background-color: white;
+}
+
+/*General sibling combinator*/
+section ~ li {
+    background-color: white;
+}
+
+/*Adjacent sibling combinator*/
+h2 + p{
+    background-color: white;
+}
+
+/*Combining two selectors*/
+fieldset.restaurant1 {
+    background-color: white;
+}
+
+/*New Selectors*/
+h2:has(+ p) {
+    background-color: white;
+}
+
+.meeting.review {
+    .last-meeting {
+        background-color: white;
+    }
+}
+
+/*Leftover tasks: Responsiveness, Fonts (General)*/
