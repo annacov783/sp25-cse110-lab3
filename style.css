@@ -4,7 +4,7 @@ body{
 
 /*Universal selector*/
 *{
-    border: 3px solid blue;
+    border: 3px solid white;
 }
 
 /*Element selectors with diff. color types*/
