@@ -3,8 +3,13 @@
     <head>
         <meta charset="utf-8">
         <link rel="icon" type="image/jpg" href="IMG_2490.jpg" />
+        <link rel="stylesheet" href="style.css" />
         <title>Meeting Minutes</title>
-        
+        <style>
+            h1 {
+                color: "MediumSeaGreen";
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -29,15 +34,16 @@
                     <li>Carol</li>
                 </ul>
             <section>
-                <h3>Agenda</h3>
+                <h3 class="agenda">Agenda</h3>
                     <ol>
                         <li>Discuss importance of check-ins and communication</li>
+                        <li>Discuss upcoming tasks</li>
                     </ol>
             </section>
             
             <h2 id="#wrap-up-last-meeting-and-discussion-topics-for-today's-meeting">Wrap Up Last Meeting and Discussion Topics For Today's Meeting</h2>
-            <p>
-                <strong>Wrap Up Last Meeting</strong>
+            <p class="meeting-review">
+                <strong class="last-meeting">Wrap Up Last Meeting</strong>
                 <i>Last meeting we discussed a, b, and c. We concluded that x, y, and z.</i>
                 <strong>Discuss Agenda Topics</strong>
                 <i>Today we will discuss check-ins, progress, and communication among the team.</i>
@@ -54,9 +60,9 @@
             
             <img src="https://kylethomasphotography.com/wp-content/uploads/2015/01/SwamisPumpkins_01-sharpened-1200x731.jpg" alt="Photograph of Encinitas Taken By Kyle Thomas" />
             <h2 id="#meeting-recording">Meeting Recording</h2>
-            <h3>Meeting Video Recording</h3>
+            <h3 id="meeting-video">Meeting Video Recording</h3>
             <video src="video2711521155.mp4"></video>
-            <h3>Meeting Audio Recording</h3>
+            <h3 id="meeting-audio">Meeting Audio Recording</h3>
             <audio src="audio2711521155.m4a"></audio>
             
         </main>
@@ -64,7 +70,7 @@
         <footer>
         <details>
             <summary>Meeting Details</summary>
-            Check-ins among memebers of team took place to ensure progress is being made.
+            <p>Check-ins among memebers of team took place to ensure progress is being made.</p>
         </details>
         <form>
             <fieldset>
@@ -76,17 +82,17 @@
                 <label for="check">I communicate with coworkers</label>
                 <fieldset>
                     <legend>Select a restaurant for catered work lunch:</legend>
-                    <div>
+                    <div class="restaurant1">
                         <input type="radio" id="olive-garden" name="restaurant" value="olive-garden" />
                         <label for="olive-garden">Olive Garden</label>
                     </div>
 
-                    <div>
+                    <div class="restaurant2">
                         <input type="radio" id="blue-ocean" name="restaurant" value="blue-ocean" />
                         <label for="blue-ocean">Blue Ocean</label>
                     </div>
 
-                    <div>
+                    <div class="restaurant3">
                         <input type="radio" id="tacos" name="restaurant" value="tacos" />
                         <label for="tacos">The Taco Stand</label>
                     </div>
@@ -108,7 +114,7 @@
 
             <label for="allergies">Allergies:</label>
             <textarea id="allergies" name="allergies" rows="4" cols="32"></textarea>
-            <button>Send</button>
+            <button class="btn">Send</button>
         </form>
         </footer>
     </body>
