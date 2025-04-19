@@ -4,8 +4,7 @@ body{
 
 /*Universal selector*/
 *{
-    text-align: center;
-    display: none;
+    border: 3px solid blue;
 }
 
 /*Element selectors with diff. color types*/
@@ -18,11 +17,13 @@ h1{
 
 h3{
     color: MediumSeaGreen;
+    display: none;
 }
 
 h2{
     color: #3cb371;
     color: color-mix(in srgb MediumSeaGreen 75% white 25%);
+    text-align: center;
 }
 
 .agenda{
@@ -32,9 +33,9 @@ h2{
 
 /*id selector with color types and fallback color*/
 #wrap-up-last-meeting-and-discussion-topics-for-todays-meeting{
-    color: hls(248, 53%, 58%);
+    color: hsl(248, 53%, 58%);
     color: color(display-p3 0.235 0.702 0.443);
-    margin: 10px, 15px, 20px, 25px;
+    margin: 10px 15px 20px 25px;
 }
 /*class selctor with diff. units, sizes, short padding, auto margin, background color*/
 .meeting.review{
@@ -107,7 +108,7 @@ a[href*="photography"] {
 
 .restaurant2{
     display: grid;
-    grid-column: 100px;
+    grid-template-columns: 100px;
     
 }
 
@@ -147,9 +148,58 @@ h2:has(+ p) {
     background-color: white;
 }
 
-.meeting.review {
-    .last-meeting {
+.meeting.review .last-meeting {
+    background-color: white;
+}
+
+
+@media (min-width: 680px) {
+    body{
+        display: inline;
+    }
+    
+    /*id selector with color types and fallback color*/
+    #wrap-up-last-meeting-and-discussion-topics-for-todays-meeting{
+        color: hsl(248, 53%, 58%);
+        color: color(display-p3 0.235 0.702 0.443);
+        margin: 10px 15px 20px 25px;
+    }
+    /*class selctor with diff. units, sizes, short padding, auto margin, background color*/
+    .meeting.review{
+        width: 10vw;
+        height: 20vh;
+        padding: 5px 10px 15px 20px;
+        border: 4px solid darkblue;
         background-color: white;
+        margin: auto;
+    
+        display: flex;
+        justify-content: center;
+    
+    }
+    /*id selector with margin long, padding long, and border types*/
+    #comments-and-questions{
+        min-width: 2in;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        border-radius: 1em;
+        
+    
+        margin-top: 10px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+    
+    
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+    
+        display: flex;
+        flex-direction: column;
+        
     }
 }
 
